@@ -15,6 +15,13 @@ let boxText= document.querySelector('h4');
 button.addEventListener('click', fetchNewPhotos);
 
 
+// if (image.addEventListener('mouseover', image)) {
+//     boxText.style.color = 'red';
+// } else {
+//     boxText.style.color = 'white';
+// }
+
+
 
 
 
@@ -59,10 +66,11 @@ function displayPhoto(json){
         downloadBox.className='.txtOnImage'
         let img= document.createElement('img');
         let link =document.createElement('a');
-        let note= document.createElement('h4');
+        let note= document.createElement('a');
         img.src= `${json[i].download_url}`; 
         img.loading="lazy";
-        link.href= `${json[i].url}`;
+        note.href= `${json[i].url}`;
+        note.className= "linkText";
         
         row.appendChild(box);
         box.appendChild(downloadBox);
@@ -70,13 +78,20 @@ function displayPhoto(json){
         link.appendChild(img);
         downloadBox.appendChild(note);
 
-      
-       
+
         
+        // document.querySelector('body').addEventListener('mouseenter', function(e) {
+        //     console.log(e);
+        //     if (e.target.children[0].innerText.toLowerCase() === "download"){
+        //         note.style.color = 'red';
+        //     } else {
+        //         note.style.color = 'white';
+        //     }
+        // })
+   
 
-
-
-        note.innerText="Download";
+        note.innerText="DOWNLOAD";
+        note.style.fontFamily="Oswald";
       
         
        
@@ -88,6 +103,10 @@ function displayPhoto(json){
 }
 
 fetchPhotos()
+// function changeColor(){
+//     boxText.style.color="red";
+// }
+
 
 
 
