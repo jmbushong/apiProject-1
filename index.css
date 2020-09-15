@@ -1,0 +1,91 @@
+body{
+    font-size: 10px;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    margin: 8px;
+    box-shadow: 2px 4px 4px black;
+    transition: .1s;
+    color: white;
+    z-index: 4;
+    position: relative;
+   
+}
+   
+
+img:hover{
+    opacity: .3;
+    z-index: 4;
+}
+
+
+
+
+
+p{
+    background-color: yellow;
+    width: 20vw;
+    height: 7vh;
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 4px 4px 4px black;
+    padding-top: 10px;
+    
+   
+}
+
+p:hover{
+    background-color: orange;
+    font-weight: bold;
+}
+
+
+
+.text{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#title{
+    letter-spacing: 15px ;
+    font-size: 2rem;
+}
+
+#subtitle{
+    font-size: 1.5rem;
+}
+
+h4{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    
+
+    
+
+    
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.pTag{
+    display: flex;
+    justify-content: center;
+}
